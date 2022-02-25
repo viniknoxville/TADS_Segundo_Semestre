@@ -1,3 +1,13 @@
+/*
+ *1) Construa uma função que receba a quantidade de linhas (linhas) e de
+ *colunas (colunas) e retorne uma matriz de dimensão linhasXcolunas
+ *contendo números inteiros gerados aleatoriamente entre 0 e 100:
+ *public static int[][] gerarMatriz(int linhas, int colunas) { … }
+ *Depois apresente a matriz preenchida.
+ *
+ *Dica: Para gerar números aleatórios utilize a função Math.random().
+ *https://www.devmedia.com.br/numeros-aleatorios-em-java-a-classe-java-util-random/26355
+ */
 
 import java.util.Random;
 import java.util.Scanner;
@@ -11,6 +21,7 @@ public class exercicio_matriz_01 {
 		int linhas = leitor.nextInt();
 		System.out.print("Colunas: ");
 		int colunas = leitor.nextInt();
+		
 		int[][] matriz = gerarMatriz(linhas, colunas);
 		System.out.println("=== Matriz ===");
 		imprimir(matriz);
